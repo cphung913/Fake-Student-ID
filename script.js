@@ -1,7 +1,8 @@
 const timer = document.getElementById("timer");
-
+console.log('ok')
 // Update the current time every 1 millisecond
 const x = setInterval(function() {
+    console.log('yay')
 
     // Get today's date and time 
     const now = new Date();
