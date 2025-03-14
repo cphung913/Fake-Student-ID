@@ -12,9 +12,9 @@ const x = setInterval(function() {
     let month = months[now.getMonth()];
         
     // Format the current time
-    var formattedTime = `${month} ${now.getDate()}, ${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}:${now.getMilliseconds(4)}`
+    var formattedTime = `${month} ${now.getDate()}, ${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}:0${now.getMilliseconds()}`
     
     // Output the result in an element with id="timer"
     timer.textContent = formattedTime;
 
-}, 1);
+}, 10);
