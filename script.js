@@ -1,21 +1,19 @@
+const timer = document.getElementById("timer");
+
 // Update the current time every 1 millisecond
-var x = setInterval(function() {
+const x = setInterval(function() {
 
     // Get today's date and time 
-    var now = new Date();
+    const now = new Date();
+
+    //Get month
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let month = months[now.getMonth()];
         
     // Format the current time
-    var formattedTime = now.toLocaleString("en-US", { 
-        month: "long", 
-        day: "numeric", 
-        year: "numeric", 
-        hour: "numeric", 
-        minute: "numeric", 
-        second: "numeric", 
-        fractionalSecondDigits: 4 
-    });
+    var formattedTime = `${month} ${now.getDate()}, ${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}:${now.getMilliseconds(4)}`
     
     // Output the result in an element with id="timer"
-    document.getElementById("timer").innerHTML = formattedTime;
+    timer.textContent = formattedTime;
 
 }, 1);
