@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+head {
+    height: 0;
+}
+
 .text {
     font-family: "Roboto", sans-serif;
 }
@@ -18,4 +22,13 @@
 img {
     width: 100%;
     height: auto;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

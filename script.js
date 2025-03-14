@@ -16,4 +16,4 @@ const x = setInterval(function() {
     // Output the result in an element with id="timer"
     timer.textContent = formattedTime;
 
-}, 10);
+}, 29);
